@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+main textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+main textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.4);
+}
+
+#results {
+  margin-top: 30px;
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+.result-card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeUp 0.5s ease;
+}
+
+.result-card h3 {
+  font-size: 1.05rem;
+  margin: 8px 0;
+}
+
+.result-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.source {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(0, 198, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.date {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
